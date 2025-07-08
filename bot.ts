@@ -23,7 +23,7 @@ bot.command("start", async (ctx) => {
     "https://www.wolfycasino.com/en/?myafftk=uOIOd5eCaahaQqmyNz7okWNd7ZgqdRLk&myaffid=789"
   );
 
-  await ctx.replyWithPhoto("https://crownslots.pro/img/bot.jpg", {
+  await ctx.replyWithPhoto("https://crownslots.pro/img/bot2.png", {
     caption: `Hello @${username}, Welcome to Wager-Free Gaming at Wolfy Casino 🎁`,
     reply_markup: keyboard,
   });
