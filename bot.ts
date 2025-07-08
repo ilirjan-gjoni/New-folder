@@ -34,7 +34,7 @@ bot.command("broadcast", async (ctx) => {
 
   // Message text after /broadcast command
   const text = ctx.message?.text?.split(" ").slice(1).join(" ");
-  if (!text) return ctx.reply("Please provide a message to send.");
+  if (!text) return ctx.reply("Please provide a message to send .");
 
   // Inline button
   const keyboard = new InlineKeyboard().url(
