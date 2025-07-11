@@ -20,7 +20,7 @@ bot.command("start", async (ctx) => {
 
   const keyboard = new InlineKeyboard().url(
     "Get BONUS!",
-    "https://www.wolfycasino.com/en/?myafftk=uOIOd5eCaahaQqmyNz7okWNd7ZgqdRLk&myaffid=789"
+    "https://record.wolfyaffiliates.com/_qaOGJp1wFb7UOsjNOfgKeWNd7ZgqdRLk/1/"
   );
 
   await ctx.replyWithPhoto("https://crownslots.pro/img/bot2.png", {
