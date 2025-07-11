@@ -1,3 +1,5 @@
+import { InlineKeyboard, Context } from "https://deno.land/x/grammy/mod.ts";
+
 bot.command("deleteuser", async (ctx) => {
   const kv = await Deno.openKv();
   const userId = 682822411;  // The user ID you want to delete

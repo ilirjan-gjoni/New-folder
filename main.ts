@@ -2,6 +2,8 @@
 import { webhookCallback } from "https://deno.land/x/grammy@v1.36.3/mod.ts";
 // You might modify this to the correct way to import your `Bot` object.
 import bot from "./bot.ts";
+import { deleteUserCommand } from "./delete_user.ts";
+deleteUserCommand(bot);
 
 const handleUpdate = webhookCallback(bot, "std/http");
 
@@ -18,4 +20,6 @@ Deno.serve(async (req) => {
     }
   }
   return new Response();
+
+  
 });
