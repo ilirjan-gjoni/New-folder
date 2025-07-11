@@ -39,7 +39,7 @@ bot.command("broadcast", async (ctx) => {
   // Inline button
   const keyboard = new InlineKeyboard().url(
     "Play Now!",
-    "https://www.wolfycasino.com/en/?myafftk=uOIOd5eCaahaQqmyNz7okWNd7ZgqdRLk&myaffid=789"
+    "https://record.wolfyaffiliates.com/_qaOGJp1wFb7UOsjNOfgKeWNd7ZgqdRLk/1/"
   );
 
   const users = [];

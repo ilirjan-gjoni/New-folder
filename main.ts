@@ -5,8 +5,14 @@ import bot from "./bot.ts";
 import { deleteUserById } from "./delete_user.ts";
 
 const userId = 682822411;  // User ID you want to delete
-
 await deleteUserById(userId);
+
+// Telegram Command: /deleteuser
+//bot.command("deleteuser", async (ctx) => {
+  //const userId = 682822411;  // The user ID you want to delete
+  //await deleteUserById(userId);
+  //await ctx.reply(`✅ User ${userId} deleted from KV.`);
+//});
 
 const handleUpdate = webhookCallback(bot, "std/http");
 
