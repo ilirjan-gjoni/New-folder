@@ -1,9 +1,12 @@
-const kv = await Deno.openKv();
-
-// The user ID to delete
-const userId = 682822411;
-
-// Delete the user from KV
-await kv.delete(["telegram_users", userId]);
-
-console.log(`✅ User ${userId} deleted from KV database.`);
+bot.command("deleteuser", async (ctx) => {
+  const kv = await Deno.openKv();
+  const userId = 682822411;  // The user ID you want to delete
+  
+  const result = await kv.delete(["telegram_users", userId]);
+  
+  if (result) {
+    await ctx.reply(`User ${userId} deleted successfully.`);
+  } else {
+    await ctx.reply(`Failed to delete user ${userId}.`);
+  }
+});
