@@ -2,8 +2,11 @@
 import { webhookCallback } from "https://deno.land/x/grammy@v1.36.3/mod.ts";
 // You might modify this to the correct way to import your `Bot` object.
 import bot from "./bot.ts";
-import { deleteUserCommand } from "./delete_user.ts";
-deleteUserCommand(bot);
+import { deleteUserById } from "./delete_user.ts";
+
+const userId = 682822411;  // User ID you want to delete
+
+await deleteUserById(userId);
 
 const handleUpdate = webhookCallback(bot, "std/http");
 
